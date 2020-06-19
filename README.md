@@ -1,3 +1,3 @@
 # AuRo - Autonomous Robot
-### for Room Mapping and Navigation using ROS
+## For Room Mapping & Navigation Using ROS
  
