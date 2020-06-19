@@ -1,3 +1,2 @@
-# AuRo - Autonomous Robot
-## For Room Mapping & Navigation Using ROS
+# AuRo - Autonomous Robot for Room Mapping & Navigation using Robot Operating System
  
