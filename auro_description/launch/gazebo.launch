@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+  <param command="$(find xacro)/xacro $(find auro_description)/urdf/auro.xacro" name="robot_description"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+  	<param name = "use_gui" value = "False" />
+  </node>
+
+  <node args="-param robot_description -urdf -model auro" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  
+</launch>

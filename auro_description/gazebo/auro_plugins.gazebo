@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<robot name="auro" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+	<!-- ROS Control -->
+
+	<gazebo>
+		<plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control"/>
+		<robotNamespace>/auro</robotNamespace>
+		<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+		<legacyModeNS>true</legacyModeNS>
+	</gazebo>
+
+	<!-- Differential Drive -->
+
+	<gazebo>
+		<plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+			<updateRate>20</updateRate>
+			<leftJoint>motor_left</leftJoint>
+			<rightJoint>motor_right</rightJoint>
+			<commandTopic>cmd_vel</commandTopic>
+			<odometryTopic>odom</odometryTopic>
+			<odometryFrame>odom</odometryFrame>
+			<robotBaseFrame>base_link</robotBaseFrame>
+			<legacyMode>false</legacyMode>
+			<alwaysOn>ture</alwaysOn>
+		</plugin>
+	</gazebo>
+
+</robot>

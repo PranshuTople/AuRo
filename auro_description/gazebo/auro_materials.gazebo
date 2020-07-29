@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<robot name="auro" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/White" />
+<xacro:property name="green" value="Gazebo/Green" />
+<xacro:property name="brass" value="Gazebo/Gold" />
+<xacro:property name="red" value="Gazebo/Red" />
+<xacro:property name="blue" value="Gazebo/Blue" />
+<xacro:property name="black" value="Gazebo/Black" />
+<xacro:property name="darkgrey" value="Gazebo/DarkGrey" />
+<xacro:property name="silver" value="Gazebo/Silver" />
+<xacro:property name="grey" value="Gazebo/Grey" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="stanoff_fl1">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_fr1">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_bl1">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_br1">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="mid_plate">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="stanoff_fl2">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_fr2">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_bl2">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="stanoff_br2">
+  <material>${brass}</material>
+</gazebo>
+
+<gazebo reference="top_plate">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="raspberryPi">
+  <material>${green}</material>
+</gazebo>
+
+<gazebo reference="motorDriver_v1">
+  <material>${red}</material>
+</gazebo>
+
+<gazebo reference="cellHolder1">
+  <material>${black}</material>
+</gazebo>
+
+<gazebo reference="cellHolder2">
+  <material>${black}</material>
+</gazebo>
+
+<gazebo reference="cellHolder3">
+  <material>${black}</material>
+</gazebo>
+
+<gazebo reference="charger3">
+  <material>${blue}</material>
+</gazebo>
+
+<gazebo reference="charger1">
+  <material>${blue}</material>
+</gazebo>
+
+<gazebo reference="charger2">
+  <material>${blue}</material>
+</gazebo>
+
+<gazebo reference="motorn20_right">
+  <material>${grey}</material>
+</gazebo>
+
+<gazebo reference="motorn20_left">
+  <material>${grey}</material>
+</gazebo>
+
+<gazebo reference="caster_forward">
+  <material>${silver}</material>
+</gazebo>
+
+<gazebo reference="caster_backward">
+  <material>${silver}</material>
+</gazebo>
+
+<gazebo reference="lidar_top">
+  <material>${blue}</material>
+</gazebo>
+
+<gazebo reference="ydlidar_x4_v1">
+  <material>${black}</material>
+</gazebo>
+
+<gazebo reference="wheel_right">
+  <material>${darkgrey}</material>
+</gazebo>
+
+<gazebo reference="wheel_left">
+  <material>${darkgrey}</material>
+</gazebo>
+
+<gazebo reference="buckconvertor">
+  <material>${blue}</material>
+</gazebo>
+
+<gazebo reference="mpu">
+  <material>${blue}</material>
+</gazebo>
+
+</robot>
